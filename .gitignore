@@ -72,3 +72,4 @@ x64/Debug/Project.pdb
 *.exe
 *.pdb
 *.log
+Project/Project.vcxproj
