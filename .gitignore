@@ -1,1 +1,29 @@
 *opendb
+# Compiled object files
+*.o
+*.obj
+
+# Compiled dynamic libraries
+*.so
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+
+# Build directories
+bin/
+build/
+lib/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.user
+*.user.*
+
+# SFML-specific files
+SFML/
