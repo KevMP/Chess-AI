@@ -27,3 +27,8 @@ lib/
 
 # SFML-specific files
 SFML/
+
+
+#idk but i feel like it should be here
+*Debug
+.vs
