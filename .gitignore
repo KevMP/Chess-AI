@@ -36,3 +36,17 @@ SFML/
 lib/include_file
 x64/
 .cvxproj
+*.vcxproj
+.vs/Project/v17/Browse.VC.db
+Project/Project.vcxproj
+Project/Project.vcxproj.user
+Project/x64/Debug/Project.exe.recipe
+x64/Debug/Project.pdb
+x64/Debug/Project.exe
+Project/x64/Debug/vc143.pdb
+Project/x64/Debug/vc143.idb
+Project/x64/Debug/Project.tlog/Project.lastbuildstate
+Project/x64/Debug/Project.tlog/link.write.1.tlog
+Project/x64/Debug/Project.tlog/link.read.1.tlog
+Project/x64/Debug/Project.tlog/CL.write.1.tlog
+Project/x64/Debug/Project.tlog/CL.read.1.tlog
