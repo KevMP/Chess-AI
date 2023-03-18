@@ -71,3 +71,4 @@ x64/Debug/Project.pdb
 *.tlog
 *.exe
 *.pdb
+*.log
