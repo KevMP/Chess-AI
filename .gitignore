@@ -32,4 +32,7 @@ SFML/
 #idk but i feel like it should be here
 *Debug
 .vs/
-*vs
+*vs/
+lib/include_file
+x64/
+.cvxproj
