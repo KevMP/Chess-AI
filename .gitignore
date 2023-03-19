@@ -20,7 +20,6 @@ lib/
 # IDE-specific files
 .vscode/
 .idea/
-*.vcxproj
 *.user
 *.user.*
 
