@@ -21,11 +21,25 @@ namespace chess {
 
 
     public:
-        
+        std::string pieceName = "King";
         sf::Sprite sprite;
         bool isBlack = false;
         sf::Vector2i position;        
        
+
+        ChessPiece(bool isBlack, sf::Vector2i position, sf::RenderWindow& window, std::string pieceName) {
+            std::string color = (isBlack == true) ? "Black" : "White";//bool to string
+
+            this->pieceName = pieceName;
+            this->isBlack = isBlack;
+            this->texture.loadFromFile("../../Assets/" + color + this->pieceName +".png");
+            this->texture.setSmooth(true);
+            this->sprite.setTexture(this->texture);
+
+            this->setSize(window);
+        }
+
+
         std::vector<sf::Vector2i> getPossibleMoves() {};//returns vector of vector2 positions
         
         void updatePosition(int xCoord, int yCoord) {
@@ -57,16 +71,7 @@ namespace chess {
 
     class Pawn : public ChessPiece {
     public:
-        Pawn(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) {
-            std::string color = (isBlack == true) ? "Black" : "White";//bool to string
-            
-            this->isBlack = isBlack;
-            this->texture.loadFromFile("../../Assets/" + color + "Pawn.png");
-            this ->texture.setSmooth(true);
-            this->sprite.setTexture(this->texture);
-
-            this->setSize(window);
-        }
+        Pawn(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Pawn") {};
 
     };
 

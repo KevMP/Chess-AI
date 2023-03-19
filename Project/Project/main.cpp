@@ -42,7 +42,7 @@ int main()
 }
 
 void generateNewBoard() {
-    chess::Pawn* pawnTest = new chess::Pawn(false, sf::Vector2i(0,0), window);
+    chess::Pawn* pawnTest = new chess::Pawn(true, sf::Vector2i(0,0), window);
     chess::board[5][3] = static_cast<chess::ChessPiece*>(pawnTest);
 
 }

@@ -1,11 +1,11 @@
 ﻿  main.cpp
 C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(17,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(16,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(32,28): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(46,28): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(39,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(39,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(53,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\Project\Chess.h(53,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Project.vcxproj -> C:\Users\kevmp\OneDrive\Desktop\GitHub\Chess-AI\Project\x64\Debug\Project.exe
