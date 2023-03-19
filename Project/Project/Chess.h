@@ -4,27 +4,55 @@
 
 
 namespace chess {
-    int boardDimension = 8;//8 by 8 so no need for 2 variables for x and y
+    const int boardDimension = 8;//8 by 8 so no need for 2 variables for x and y
 
 
-    class ChessPiece {
+    class ChessPiece {//must be publicly inherited to be able to typecast
+    protected:
+        sf::Texture texture;
+
+        void setSize() {
+            //this->sprite.setScale()
+        };
+
+
     public:
-        ChessPiece() {};
-        ChessPiece(std::nullptr_t) {};//legit dont know why I need this but it complains if I dont do this
+        
+        sf::Sprite sprite;
+        bool isBlack = false;
+        sf::Vector2i position;        
+       
+        std::vector<sf::Vector2i> getPossibleMoves() {};//returns vector of vector2 positions
+    };
+
+
+    chess::ChessPiece* board[boardDimension][boardDimension] = {
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
     };
 
 
 
-    chess::ChessPiece board[8][8] = {
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
-        {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr}
+
+    class Pawn : public ChessPiece {
+    public:
+        Pawn(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) {
+            std::string color = (isBlack == true) ? "Black" : "White";//bool to string
+            
+            this->isBlack = isBlack;
+            this->texture.loadFromFile("../../Assets/" + color + "Pawn.png");
+            this->sprite.setTexture(this->texture);
+        }
+
     };
+
+
 
 }
 
