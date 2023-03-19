@@ -11,8 +11,6 @@ namespace chess {
     public:
         ChessPiece() {};
         ChessPiece(std::nullptr_t) {};//legit dont know why I need this but it complains if I dont do this
-
-
     };
 
 
@@ -27,8 +25,6 @@ namespace chess {
         {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr},
         {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr}
     };
-
-    
 
 }
 
