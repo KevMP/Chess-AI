@@ -43,16 +43,18 @@ int main()
 
 void generateNewBoard() {
     chess::Pawn* pawnTest = new chess::Pawn(false, sf::Vector2i(0,0), window);
-    chess::board[0][0] = static_cast<chess::ChessPiece*>(pawnTest);
-
-
+    chess::board[5][3] = static_cast<chess::ChessPiece*>(pawnTest);
 
 }
 
 
 void drawPieces() {
-    for (int x = 0; x < chess::boardDimension; x++)
-        for (int y = x; y < chess::boardDimension; y++)
-            if (chess::board[x][y] != nullptr)
+    for (int x = 0; x < chess::boardDimension; x++) {
+        for (int y = 0; y < chess::boardDimension; y++) {
+            if (chess::board[x][y] != nullptr) {
                 window.draw(chess::board[x][y]->sprite);
+                chess::board[x][y]->updatePosition(x, y);  
+            }
+        }
+    }
 }
