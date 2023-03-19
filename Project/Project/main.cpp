@@ -1,5 +1,5 @@
 #include  <SFML/Graphics.hpp>
-#include "ChessPieces.h"
+#include "Chess.h"
 
 int main()
 {
