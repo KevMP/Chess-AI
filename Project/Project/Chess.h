@@ -72,7 +72,35 @@ namespace chess {
     class Pawn : public ChessPiece {
     public:
         Pawn(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Pawn") {};
+    };
 
+
+
+    class Rook : public ChessPiece {
+    public:
+        Rook(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Rook") {};
+    };
+
+
+    class Bishop : public ChessPiece {
+    public:
+        Bishop(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Bishop") {};
+    };
+
+
+    class Knight : public ChessPiece {
+    public:
+        Knight(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Knight") {};
+    };
+
+    class Queen : public ChessPiece {
+    public:
+        Queen(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "Queen") {};
+    };
+
+    class King : public ChessPiece {
+    public:
+        King(bool isBlack, sf::Vector2i position, sf::RenderWindow& window) : ChessPiece(isBlack, position, window, "King") {};
     };
 
 
