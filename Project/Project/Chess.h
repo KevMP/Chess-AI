@@ -28,7 +28,10 @@ namespace chess {
 
     class Pawn : public ChessPiece {
     public:
+        bool hasMoved = false;
+
         Pawn(bool isBlack, sf::Vector2i position) : ChessPiece(isBlack, position, "Pawn") {};
+        std::vector<sf::Vector2i> getPossibleMoves();
     };
 
     class Rook : public ChessPiece {

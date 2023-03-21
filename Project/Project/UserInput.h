@@ -3,10 +3,12 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
-
+#include <vector>
 
 namespace chess{
 	void handleEvent(sf::Event& event);
+
+	std::vector<sf::Sprite> possibleMovesSprites;
 }
 
 

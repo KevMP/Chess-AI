@@ -26,7 +26,11 @@ chess::ChessPiece* returnClickedPiece() {
 void displayPiecePossibleMoves(chess::ChessPiece* piece) {
 	if (!piece) return;
 
-	std::cout << piece->position.x << ", " << piece->position.y << std::endl;
+	//std::cout << piece->position.x << ", " << piece->position.y << std::endl;
+	
+	std::vector<sf::Vector2i> possibleMoves = piece->getPossibleMoves();
+
+
 }
 
 void chess::handleEvent(sf::Event& event) {

@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="ChessPiece.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pawn.cpp" />
     <ClCompile Include="UserInput.cpp" />
   </ItemGroup>
   <ItemGroup>
